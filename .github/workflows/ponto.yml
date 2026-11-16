@@ -1,4 +1,4 @@
-name: placar
+name: ponto
 
 on:
   issues:
@@ -13,18 +13,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  oi:
-    if: contains(github.event.issue.title, '👋') || contains(github.event.issue.title, 'oi')
+  bate-ponto:
+    if: contains(github.event.issue.title, 'ponto') || contains(github.event.issue.title, '👋') || contains(github.event.issue.title, 'oi')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: entra no placar
+      - name: registra no livro de ponto
         env:
           LOGIN: ${{ github.event.issue.user.login }}
-        run: node scripts/placar.mjs
+        run: node scripts/ponto.mjs
       - run: node scripts/gerar.mjs
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data assets README.md
-          git diff --cached --quiet || git commit -m "chore: placar +1"
+          git diff --cached --quiet || git commit -m "chore: ponto batido"
           git pull --rebase
           git push
       - name: responde e fecha
@@ -42,5 +42,5 @@ jobs:
           NUM: ${{ github.event.issue.number }}
           LOGIN: ${{ github.event.issue.user.login }}
         run: |
-          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body "Novo jogador desbloqueado: @$LOGIN 🏆 Teu avatar já tá no placar!"
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body "Ponto registrado, @$LOGIN 🕐 Teu crachá já tá no livro de ponto da fábrica!"
           gh issue close "$NUM" --repo "$GITHUB_REPOSITORY"

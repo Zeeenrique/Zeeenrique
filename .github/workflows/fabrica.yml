@@ -1,4 +1,4 @@
-name: idle
+name: fabrica
 
 on:
   schedule:
@@ -25,12 +25,12 @@ jobs:
           node-version: 22
       - run: node scripts/gerar.mjs
         env:
-          # STATS_TOKEN (PAT só leitura) enxerga os repos privados; sem ele usa o token padrão
+          # STATS_TOKEN (PAT classic com escopo repo) enxerga repos privados e de org; sem ele usa o token padrão
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
       - name: commit
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets README.md
-          git diff --cached --quiet || git commit -m 'chore: jogo salvo'
+          git diff --cached --quiet || git commit -m 'chore: fim do turno'
           git push

@@ -1,45 +1,46 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/idle-escuro.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/idle-claro.svg">
-  <img alt="Zeeenrique Idle: tela de jogo idle com prestígio, contribuições, upgrades de stack e conquistas, atualizada todo dia" src="assets/idle-escuro.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fabrica-escuro.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/fabrica-claro.svg">
+  <img alt="Zeeenrique Industries: fábrica com crachá do operador, máquinas por linguagem, esteira de commits e painel de controle, atualizada todo dia" src="assets/fabrica-escuro.svg" width="100%">
 </picture>
-
-Oi, eu sou o Luiz Henrique 👋 Dev full stack há 8 anos, lá de Chapecó/SC. Rust, TypeScript/Angular, Java/Spring e Dart/Flutter: escolho a ferramenta pelo problema (e às vezes pela vontade de escrever mais Rust).
-
-Fora do teclado: jogos (os idle são os favoritos, jogam sozinhos enquanto eu trabalho) e finanças pessoais, que pensando bem também é um jogo idle.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-escuro.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-claro.svg">
-  <img alt="Terminal animado com whoami, uptime e afins" src="assets/terminal-escuro.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/letreiro-escuro.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/letreiro-claro.svg">
+  <img alt="Letreiro de LED com os avisos da fábrica" src="assets/letreiro-escuro.svg" width="100%">
 </picture>
 
-### ⚔️ Quests em andamento
+Sou o Luiz Henrique, dev full stack há 8 anos, de Chapecó/SC. No meu chão de fábrica rodam Rust, TypeScript/Angular, Java/Spring e Dart/Flutter: escolho a máquina pelo serviço (e às vezes pela vontade de escrever mais Rust).
 
-- **Carreto do Fim do Mundo**: jogo cooperativo 3D de física que roda no navegador.
-- **Xucrutz**: um Discord só nosso, feito em Rust pros guri, com app desktop em Tauri + Angular.
+No intervalo: jogos idle, que produzem sozinhos enquanto eu trabalho, e planilha de finanças, que é basicamente o mesmo jogo com dinheiro de verdade.
 
-<sub>Os dois ainda são privados. Quando sair da fase de testes, o link aparece aqui.</sub>
+### 📦 Em produção
 
-### 🏆 Placar de jogadores
+| Produto | O que é | Status |
+|---|---|---|
+| **Carreto do Fim do Mundo** | jogo cooperativo 3D de física que roda no navegador | 🔧 em desenvolvimento |
+| **Xucrutz** | um Discord só nosso, em Rust + Tauri/Angular, feito pros guri | 🔧 em desenvolvimento |
 
-<!-- PLACAR:INICIO -->
-<sub>placar vazio. o primeiro jogador ganha a conquista secreta 👀</sub>
-<!-- PLACAR:FIM -->
+<sub>Linhas privadas por enquanto. Quando saírem da fábrica, o link aparece aqui.</sub>
 
-<sub>Quer entrar no placar? <a href="https://github.com/Zeeenrique/Zeeenrique/issues/new?title=%F0%9F%91%8B+oi&body=S%C3%B3+envia.+Um+rob%C3%B4+coloca+teu+avatar+no+placar+e+fecha+a+issue.">Deixa um oi</a>: um robô coloca teu avatar aqui em segundos.</sub>
+### 🕐 Livro de ponto
+
+<!-- PONTO:INICIO -->
+<sub>ninguém bateu o ponto ainda. o primeiro ganha a vaga de funcionário do mês 👀</sub>
+<!-- PONTO:FIM -->
+
+<sub>Passou por aqui? <a href="https://github.com/Zeeenrique/Zeeenrique/issues/new?title=%F0%9F%95%90+bater+ponto&body=S%C3%B3+envia.+Um+rob%C3%B4+registra+teu+ponto+e+fecha+a+issue.">Bate o ponto</a> e um robô registra tua entrada em segundos.</sub>
 
 <details>
-<summary><sub>🎁 baú trancado (não abre)</sub></summary>
+<summary><sub>🔒 sala do gerente: acesso restrito</sub></summary>
 
 ```
-   você abriu o baú.
-   recompensa: nenhuma. só a verdade:
-   a tela lá em cima se atualiza sozinha todo dia via GitHub Actions,
-   o terminal é um SVG animado gerado por script
-   e o placar é um JSON que um robô edita.
-   ou seja: eu não faço nada e os números sobem.
-   é um jogo idle.
+   você entrou sem crachá.
+   já que tá aqui, o segredo da firma:
+   a fábrica lá em cima é um SVG que o GitHub Actions monta todo dia,
+   o letreiro também,
+   e o livro de ponto é um JSON que um robô preenche.
+   o gerente (eu) não faz nada. a produção sobe igual.
 ```
 
 </details>
