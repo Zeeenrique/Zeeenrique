@@ -4,7 +4,7 @@
   <img alt="Zeeenrique Idle: tela de jogo idle com prestígio, contribuições, upgrades de stack e conquistas, atualizada todo dia" src="assets/idle-escuro.svg" width="100%">
 </picture>
 
-Oi, eu sou o Luiz Henrique 👋 Dev full stack há 8 anos, lá de São Miguel do Oeste/SC. Rust, TypeScript/Angular, Java/Spring e Dart/Flutter: escolho a ferramenta pelo problema (e às vezes pela vontade de escrever mais Rust).
+Oi, eu sou o Luiz Henrique 👋 Dev full stack há 8 anos, lá de Chapecó/SC. Rust, TypeScript/Angular, Java/Spring e Dart/Flutter: escolho a ferramenta pelo problema (e às vezes pela vontade de escrever mais Rust).
 
 Fora do teclado: jogos (os idle são os favoritos, jogam sozinhos enquanto eu trabalho) e finanças pessoais, que pensando bem também é um jogo idle.
 

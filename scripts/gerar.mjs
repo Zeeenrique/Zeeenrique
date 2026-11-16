@@ -9,7 +9,7 @@ const CARREIRA_INICIO = '2018-06-01'; // base do "prestígio" (anos de carreira)
 const PERFIL = {
   nome: 'Luiz Henrique',
   titulo: 'Dev Full Stack',
-  local: 'São Miguel do Oeste/SC',
+  local: 'Chapecó/SC',
   bonus: ['Jogos idle', 'Finanças'],
 };
 
@@ -296,7 +296,7 @@ function terminal(t) {
 </style>
 <rect x="0.5" y="0.5" width="${W - 1}" height="${H + 19}" rx="12" fill="${t.card}" stroke="${t.borda}"/>
 <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
-<text x="${W / 2}" y="24" text-anchor="middle" style="font:12px ${MONO};fill:${t.sub}">zeeenrique@smo: ~</text>
+<text x="${W / 2}" y="24" text-anchor="middle" style="font:12px ${MONO};fill:${t.sub}">zeeenrique@chapeco: ~</text>
 ${corpo}
 <text x="24" y="${yCursor}" class="cmd">$ <tspan class="cursor">▋</tspan></text>
 </svg>`;
