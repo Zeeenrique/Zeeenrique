@@ -12,7 +12,7 @@
 
 Sou o Luiz Henrique, dev full stack há 8 anos, de Chapecó/SC. No meu chão de fábrica rodam Rust, TypeScript/Angular, Java/Spring e Dart/Flutter: escolho a máquina pelo serviço (e às vezes pela vontade de escrever mais Rust).
 
-No intervalo: jogos idle, que produzem sozinhos enquanto eu trabalho, e planilha de finanças, que é basicamente o mesmo jogo com dinheiro de verdade.
+No intervalo, toco projetos solo e com os amigos. E de vez em quando rola uma jogatina pra descontrair.
 
 ### 📦 Em produção
 

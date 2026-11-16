@@ -11,7 +11,7 @@ const PERFIL = {
   nome: 'Luiz Henrique',
   cargo: 'Operador Full Stack',
   local: 'Chapecó/SC',
-  intervalo: 'jogos idle · finanças',
+  intervalo: 'projetos, amigos e jogatina',
 };
 
 const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;

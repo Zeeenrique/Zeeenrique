@@ -111,7 +111,7 @@ export function fabrica(t, d) {
   // ---------- crachá ----------
   const rb = rng(99);
   let barras = '', bx = 62;
-  while (bx < 198) { const w = rb() < 0.5 ? 1 : rb() < 0.7 ? 2 : 3; barras += `<rect x="${bx}" y="352" width="${w}" height="14" fill="${TINTA.txt}"/>`; bx += w + 1 + Math.floor(rb() * 2); }
+  while (bx < 198) { const w = rb() < 0.5 ? 1 : rb() < 0.7 ? 2 : 3; barras += `<rect x="${bx}" y="358" width="${w}" height="11" fill="${TINTA.txt}"/>`; bx += w + 1 + Math.floor(rb() * 2); }
 
   // ---------- painel de LED ----------
   const mostradores = [
@@ -262,7 +262,8 @@ export function fabrica(t, d) {
   <text x="56" y="314" class="cr">TURNO ${d.turno} → ${d.turno + 1}</text><text x="204" y="314" class="cr" text-anchor="end">${d.diasPromocao}d</text>
   <rect x="56" y="320" width="148" height="6" rx="3" fill="${TINTA.sub}" opacity=".18"/>
   <rect x="56" y="320" width="${f1(148 * d.progresso)}" height="6" rx="3" fill="${t.laranja}" class="enche" style="animation-delay:.5s"/>
-  <text x="130" y="343" class="cc" text-anchor="middle" style="font-size:10.5px">intervalo: ${esc(d.PERFIL.intervalo)}</text>
+  <text x="130" y="339" class="cr" text-anchor="middle">INTERVALO</text>
+  <text x="130" y="352" class="cc" text-anchor="middle" style="font-size:11px">${esc(d.PERFIL.intervalo)}</text>
   ${barras}
   <path d="M40 104h180v50L40 230z" fill="url(#fBrilhoCracha)" opacity=".5"/>
   <rect x="40.5" y="74.5" width="179" height="301" rx="11.5" fill="none" stroke="#000" stroke-opacity=".12"/>
@@ -277,7 +278,7 @@ ${painel}
 
 export function letreiro(t, d) {
   const W = 860, H = 64;
-  const msg = `▶ ZEEENRIQUE INDUSTRIES   ·   operador ${d.PERFIL.nome.toUpperCase()} no turno há ${d.turno} anos   ·   ${fmt(d.producao)} caixas produzidas nos últimos 365 dias   ·   dias sem commit: ${d.semCommit} (orgulho da firma)   ·   em produção: CARRETO e XUCRUTZ   ·   finanças do operador: no azul   ·   próxima promoção em ${d.diasPromocao} dias   ·   `;
+  const msg = `▶ ZEEENRIQUE INDUSTRIES   ·   operador ${d.PERFIL.nome.toUpperCase()} no turno há ${d.turno} anos   ·   ${fmt(d.producao)} caixas produzidas nos últimos 365 dias   ·   dias sem commit: ${d.semCommit} (orgulho da firma)   ·   em produção: CARRETO e XUCRUTZ   ·   no intervalo: projetos solo, com os amigos e uma jogatina pra descontrair   ·   próxima promoção em ${d.diasPromocao} dias   ·   `;
   const { L, svg } = rolagem(msg, 13.5, 24, 41, 'msg');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Letreiro: ${esc(msg)}">
 <style>
