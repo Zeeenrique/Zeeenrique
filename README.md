@@ -26,7 +26,7 @@ No intervalo: jogos idle, que produzem sozinhos enquanto eu trabalho, e planilha
 ### 🕐 Livro de ponto
 
 <!-- PONTO:INICIO -->
-<sub>ninguém bateu o ponto ainda. o primeiro ganha a vaga de funcionário do mês 👀</sub>
+<a href="https://github.com/BrunoMSchmidt"><img src="https://github.com/BrunoMSchmidt.png?size=64" width="40" height="40" alt="@BrunoMSchmidt" title="@BrunoMSchmidt"/></a>
 <!-- PONTO:FIM -->
 
 <sub>Passou por aqui? <a href="https://github.com/Zeeenrique/Zeeenrique/issues/new?title=%F0%9F%95%90+bater+ponto&body=S%C3%B3+envia.+Um+rob%C3%B4+registra+teu+ponto+e+fecha+a+issue.">Bate o ponto</a> e um robô registra tua entrada em segundos.</sub>

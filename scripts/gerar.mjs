@@ -155,9 +155,7 @@ const pontoMd = ponto.length
   : '<sub>ninguém bateu o ponto ainda. o primeiro ganha a vaga de funcionário do mês 👀</sub>';
 
 let readme = await readFile('README.md', 'utf8');
-readme = readme.replace(/<!-- PONTO:INICIO -->[sS]*?<!-- PONTO:FIM -->/, `<!-- PONTO:INICIO -->
-${pontoMd}
-<!-- PONTO:FIM -->`);
+readme = readme.replace(/<!-- PONTO:INICIO -->[\s\S]*?<!-- PONTO:FIM -->/, `<!-- PONTO:INICIO -->\n${pontoMd}\n<!-- PONTO:FIM -->`);
 await writeFile('README.md', readme);
 
 console.log({ turno, producao, ritmo: ritmo.toFixed(2), horaExtra, expediente, semParar, recorde, semCommit, filiais, stack: stack.map((s) => `${s.nome} ${s.pct.toFixed(1)}%`), ponto: ponto.length });
